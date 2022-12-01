@@ -39,13 +39,13 @@ namespace AutoTesting
 
         public class MainPage
         {
+            private static readonly By extendedSearchButton = By.Id("gh-as-a");
             private static readonly String searchText = "лопата";
+            private static readonly By searchBar = By.Name("_nkw");
+            private static readonly By searchButton = By.Id("gh-btn");
 
             public class MainBar
             {
-                private static readonly By searchBar = By.Name("_nkw");
-                private static readonly By searchButton = By.Id("gh-btn");
-
                 public class Test
                 {
                     Browser browser = new Browser("https://www.ebay.com/");
@@ -69,7 +69,6 @@ namespace AutoTesting
 
             public class ExtendedBar
             {
-                private static readonly By extendedSearchButton = By.Id("gh-as-a");
                 private static readonly By searchBar = By.Name("_nkw");
                 private static readonly By searchButton = By.ClassName("btn-prim");
 
